@@ -132,37 +132,6 @@ public static class Game
             if (isNotice)
                 NotifierHelper.Notice(I18nHelper.I18n._("Core.Game.StartGameProcess", gameInfo.Name));
 
-            // 获取当前进程所有环境变量名及其值
-            var environmentVariables = GetEnvironmentVariables();
-
-            // 直接赋值给字典，如果键已存在，则更新对应的值，否则则创建
-            environmentVariables["EAFreeTrialGame"] = "false";
-            environmentVariables["EAAuthCode"] = Account.OriginPCToken;
-            environmentVariables["EALaunchOfflineMode"] = "false";
-            environmentVariables["OriginSessionKey"] = "7102090b-ea9a-4531-9598-b2a7e943b544";
-            environmentVariables["EAGameLocale"] = "zh_TW";
-            environmentVariables["EALaunchEnv"] = "production";
-            environmentVariables["EALaunchEAID"] = Account.PlayerName;
-            environmentVariables["EALicenseToken"] = "114514";
-            environmentVariables["EAEntitlementSource"] = "EA";
-            environmentVariables["EAUseIGOAPI"] = "1";
-            environmentVariables["EALaunchUserAuthToken"] = Account.OriginPCToken;
-            environmentVariables["EAGenericAuthToken"] = Account.OriginPCToken;
-            environmentVariables["EALaunchCode"] = "unavailable";
-            environmentVariables["EARtPLaunchCode"] = EaCrypto.GetRTPHandshakeCode();
-            environmentVariables["EALsxPort"] = "3216";
-            environmentVariables["EAEgsProxyIpcPort"] = "1705";
-            environmentVariables["EASteamProxyIpcPort"] = "1704";
-            environmentVariables["EAExternalSource"] = "EA";
-            environmentVariables["EASecureLaunchTokenTemp"] = "1001006949032";
-            environmentVariables["SteamAppId"] = "";
-            environmentVariables["ContentId"] = gameInfo.ContentId;
-            environmentVariables["EAConnectionId"] = gameInfo.ContentId;
-
-            // 修复泰坦陨落2无法连接数据中心，傻逼重生
-            if (gameInfo.GameType is GameType.TTF2)
-                environmentVariables["OPENSSL_ia32cap"] = "~0x200000200000000";
-
             // 初始化进程类实例
             var startInfo = new ProcessStartInfo
             {
@@ -223,15 +192,7 @@ public static class Game
                 // 启动参数
                 startInfo.Arguments = string.Concat(webArgs, " ", gameInfo.Args).Trim();
             }
-
-            // 批量设置进程启动环境变量
-            foreach (var variable in environmentVariables)
-            {
-                startInfo.EnvironmentVariables[variable.Key] = variable.Value;
-            }
-
-
-            string serializedData = $"{startInfo.FileName};{startInfo.WorkingDirectory};{startInfo.Arguments};{Account.OriginPCToken};{Account.PlayerName};{EaCrypto.GetRTPHandshakeCode()};{gameInfo.ContentId}";
+            string serializedData = $"{startInfo.FileName};{startInfo.WorkingDirectory};{startInfo.Arguments};{Account.OriginPCToken};{Account.PlayerName};{EaCrypto.GetRTPHandshakeCode()};{gameInfo.ContentId};{RegistryHelper.GetLocaleByContentId(gameInfo.ContentId)}";
 
             // 启动程序
             using (var pipeClient = new NamedPipeClientStream(".", "RunGame_OriginDebug", PipeDirection.Out))
@@ -242,8 +203,6 @@ public static class Game
                     writer.WriteLine(serializedData);
                 }
             }
-
-            //Process.Start(startInfo);
 
             LoggerHelper.Info(I18nHelper.I18n._("Core.Game.StartGameSuccess", gameInfo.Name));
             if (isNotice)
