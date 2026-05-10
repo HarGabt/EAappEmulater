@@ -1,5 +1,5 @@
 # EAapp Emulater
-**[简体中文](README.md) | English**
+**[简体中文](README.md) | English | [Русский](README-ru.md)**
 
 EAapp Emulater by `Misaka_Mikoto_01`  `CrazyZhang666`  `B1397KB`
 
@@ -51,38 +51,42 @@ By default, we will read your computer's primary language and set it as the prog
 
 ## Supported Games
 
-- BattleField 3
-- BattleField 4
-- Battlefield: Hardline
-- Battlefield 1
-- BattleField V
-- Battlefield 2042
+- Battlefield™ 3
+- Battlefield™ 4
+- Battlefield™ Hardline
+- Battlefield™ 1
+- Battlefield™ V
+- Battlefield™ 2042
 - Battlefield™ 6
 - Battlefield™ Labs
-- Battlefield™ 2042 Technical Game Test
-- Battlefield V™ Closed ALPHA Test
-- Battlefield™ 1 Closed ALPHA Test
-- Battlefield 4™ - ALPHA Test
+- Battlefield™ 2042 Open Beta
+- Battlefield™ V Closed Alpha
+- Battlefield™ 1 Closed Alpha
+- Battlefield™ 4 Alpha
 - EA SPORTS™ F1® 23
-- EA SPORTS™ F1® 24（Trial license cannot start）
+- EA SPORTS™ F1® 24 (Trial license cannot start)
 - FIFA 22
 - FIFA 23
 - EA SPORTS™ FC™ 24
 - EA SPORTS™ FC™ 25
 - It Takes Two
-- Need for Speed 19
-- Need for Speed: Heat
-- Need for Speed: Unbound
-- Need for Speed: Most Wanted
-- Need for Speed: Hot Pursuit Remastered
-- Need for Speed: Rivals (no internet connection)
-- Plants vs. Zombies: Defend Neighborville
+- Need for Speed™ (2016)
+- Need for Speed™ Heat
+- Need for Speed™ Unbound
+- Need for Speed™ Most Wanted
+- Need for Speed™ Hot Pursuit Remastered
+- Need for Speed™ Rivals (no internet connection)
+- Plants vs. Zombies: Battle for Neighborville
 - Plants vs. Zombies: Garden Warfare
 - Plants vs. Zombies: Garden Warfare 2
-- Star Wars Battlefront
-- Star Wars Battlefront II
+- Star Wars™ Battlefront™
+- Star Wars™ Battlefront™ II
 - Star Wars™ Jedi: Fallen Order
 - Star Wars™ Squadrons
 - Titanfall 2
 - Anthem
 - PGA Tour
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CrazyZhang666/EAappEmulater&type=date&legend=top-left)](https://www.star-history.com/#CrazyZhang666/EAappEmulater&type=date&legend=top-left)

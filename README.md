@@ -1,5 +1,5 @@
 # EAapp模拟器
-**简体中文 | [English](README-en.md)**
+**简体中文 | [English](README-en.md) | [Русский](README-ru.md)**
 
 
 EAapp模拟器（EA App Emulater） by `Misaka_Mikoto_01`  `CrazyZhang666`  `B1397KB`
