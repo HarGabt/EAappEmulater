@@ -151,6 +151,7 @@
     <sys:String x:Key="Views.AboutView.CoreAlgorithm">Core Algorithm: Misaka_Mikoto_01</sys:String>
     <sys:String x:Key="Views.AboutView.Design">Program Design: CrazyZhang666  B1397KB</sys:String>
     <sys:String x:Key="Views.AboutView.Declare">This program is for learning and research purposes only</sys:String>
+	<sys:String x:Key="Views.AboutView.Translation">Translation by: EAAppEmulater Team</sys:String>
 
 
     <!--Views/FriendView.xaml.cs-->
@@ -367,9 +368,9 @@
     <sys:String x:Key="App.WebView2EnvCheckSuccess">WebView2 environment is OK</sys:String>
     <sys:String x:Key="App.TCPPortCheck">Checking TCP port availability...</sys:String>
     <sys:String x:Key="App.TCPPortCheckErrorTitle">Initialization Error</sys:String>
-    <sys:String x:Key="App.TCPPortCheck3216">TCP port 3216 is in use. Please free the port&#x0a;Usually closing Origin and EaApp is enough</sys:String>
-    <sys:String x:Key="App.TCPPortCheck3215">TCP port 3215 is in use. Please free the port&#x0a;Usually closing Origin and EaApp is enough</sys:String>
-    <sys:String x:Key="App.TCPPortCheck4219">TCP port 4219 is in use. Please free the port&#x0a;Usually closing Origin and EaApp is enough</sys:String>
+    <sys:String x:Key="App.TCPPortCheck3216">TCP port 3216 is in use. Please free the port.&#x0a;Usually closing Origin and EA App is enough</sys:String>
+    <sys:String x:Key="App.TCPPortCheck3215">TCP port 3215 is in use. Please free the port.&#x0a;Usually closing Origin and EA App is enough</sys:String>
+    <sys:String x:Key="App.TCPPortCheck4219">TCP port 4219 is in use. Please free the port.&#x0a;Usually closing Origin and EA App is enough</sys:String>
     <sys:String x:Key="App.TCPPortCheckSuccess">TCP port check passed</sys:String>
     <sys:String x:Key="App.TaskEx">Unhandled exception captured on Task thread</sys:String>
     <sys:String x:Key="App.ErrorFileName">The simulator executable name is not EADesktop.exe. Please rename it to EADesktop.exe and start again</sys:String>
