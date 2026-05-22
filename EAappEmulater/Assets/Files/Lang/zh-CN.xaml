@@ -151,6 +151,7 @@
     <sys:String x:Key="Views.AboutView.CoreAlgorithm">核心算法: Misaka_Mikoto_01</sys:String>
     <sys:String x:Key="Views.AboutView.Design">程序设计: CrazyZhang666  B1397KB</sys:String>
     <sys:String x:Key="Views.AboutView.Declare">本程序仅供学习研究使用</sys:String>
+	<sys:String x:Key="Views.AboutView.Translation">​</sys:String>
 
 
     <!--Views/FriendView.xaml.cs-->

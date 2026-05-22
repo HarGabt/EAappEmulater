@@ -29,16 +29,20 @@
             x:Name="TextBlock_Name01"
             Margin="5,10,5,5"
             HorizontalAlignment="Center"
-            Text="{DynamicResource Views.AboutView.CoreAlgorithm}" />
+            Text="{DynamicResource Views.AboutView.CoreAlgorithm}" TextAlignment="Center" />
+        <TextBlock
+            Width="278"
+            HorizontalAlignment="Center"
+            Text="{DynamicResource Views.AboutView.Design}" TextAlignment="Center" />
         <TextBlock
             Width="206"
-            HorizontalAlignment="Center"
-            Text="{DynamicResource Views.AboutView.Design}" />
+            Margin="5,5,5,5"
+            Text="{DynamicResource Views.AboutView.Translation}" TextAlignment="Center" />
 
         <TextBlock
             Margin="5,20,5,5"
             HorizontalAlignment="Center"
-            Text="{DynamicResource Views.AboutView.Declare}" />
+            Text="{DynamicResource Views.AboutView.Declare}" TextAlignment="Center" />
         <TextBlock
             HorizontalAlignment="Center"
             Opacity="0.8"

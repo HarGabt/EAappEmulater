@@ -148,6 +148,7 @@
     <sys:String x:Key="Views.AboutView.CoreAlgorithm">Algoritmo principale: Misaka_Mikoto_01</sys:String>
     <sys:String x:Key="Views.AboutView.Design">Progettato da: CrazyZhang666  B1397KB</sys:String>
     <sys:String x:Key="Views.AboutView.Declare">Questo programma è solo per scopi di studio e ricerca</sys:String>
+	<sys:String x:Key="Views.AboutView.Translation">​</sys:String>
 
 
     <!--Views/FriendView.xaml.cs-->

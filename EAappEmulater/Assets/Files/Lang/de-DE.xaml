@@ -137,6 +137,7 @@
     <sys:String x:Key="Views.AboutView.CoreAlgorithm">Kernalgorithmus: Misaka_Mikoto_01</sys:String>
     <sys:String x:Key="Views.AboutView.Design">Programmdesign: CrazyZhang666  B1397KB</sys:String>
     <sys:String x:Key="Views.AboutView.Declare">Dieses Programm dient nur zu Lern- und Forschungszwecken</sys:String>
+	<sys:String x:Key="Views.AboutView.Translation">​</sys:String>
 
     <!--Views/FriendView.xaml.cs-->
     <sys:String x:Key="Views.FriendView.GetFriendsProcess">Freundesliste des aktuellen Kontos wird abgerufen...</sys:String>
