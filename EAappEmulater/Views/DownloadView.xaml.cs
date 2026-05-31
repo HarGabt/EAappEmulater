@@ -109,6 +109,9 @@ query getPreloadedOwnedGames(
                 case "zh-CN":
                     locale = "zh-hans";
                     break;
+                case "ru-RU":
+                    locale = "ru-RU";
+                    break;
                 default:
                     locale = "en";
                     break;
