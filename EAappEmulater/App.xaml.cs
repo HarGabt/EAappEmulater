@@ -28,8 +28,8 @@ public partial class App : Application
 
         // Determine language to set following rules:
         // - If Config (Globals.DefaultLanguage) has a supported language -> use it
-        // - If Config has but not supported -> use system default (if supported) else zh-CN
-        // - If no Config -> use system default (if supported) else zh-CN
+        // - If Config has but not supported -> use system default (if supported) else en-US
+        // - If no Config -> use system default (if supported) else en-US
         string langToSet = string.Empty;
         var supported = LanguageConfigHelper.GetLanguages().Select(x => x.Code).ToList();
 
@@ -61,14 +61,14 @@ public partial class App : Application
             // if config had value but not supported, we already tried system; if still empty continue
             if (string.IsNullOrWhiteSpace(langToSet) && !string.IsNullOrWhiteSpace(Globals.DefaultLanguage))
             {
-                // config invalid and system didn't match -> fallback to zh-CN
-                langToSet = "zh-CN";
+                // config invalid and system didn't match -> fallback to en-US
+                langToSet = "en-US";
             }
 
-            // if no config and system not supported -> fallback to zh-CN
+            // if no config and system not supported -> fallback to en-US
             if (string.IsNullOrWhiteSpace(langToSet) && string.IsNullOrWhiteSpace(Globals.DefaultLanguage))
             {
-                langToSet = "zh-CN";
+                langToSet = "en-US";
             }
         }
 

@@ -524,7 +524,6 @@ public static class EaApi
 
             request.AddHeader("User-Agent", "Mozilla/5.0 EA Download Manager Origin/10.5.94.46774");
             request.AddHeader("X-Origin-Platform", "PCWIN");
-            request.AddHeader("localeInfo", "zh_TW");
             request.AddHeader("Cookie", $"remid={Account.Remid};sid={Account.Sid};");
 
             var response = await _client.ExecuteAsync(request);

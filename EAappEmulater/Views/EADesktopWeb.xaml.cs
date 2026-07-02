@@ -87,7 +87,7 @@ namespace EAappEmulater.Views
 
                 if (currentUrl.Contains("login.html#access_token") || currentUrl.Contains("logout.html"))
                 {
-                    webView2.CoreWebView2.Navigate("https://pc.ea.com/zh-hans");
+                    webView2.CoreWebView2.Navigate("https://pc.ea.com/");
                 }
             }
         }
